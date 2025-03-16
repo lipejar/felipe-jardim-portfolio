@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Felipe Jardim, desenvolvedor web. Confira meus projetos e entre em contato!"
+    />
+    <meta
+      name="keywords"
+      content="desenvolvedor web, portfólio, projetos, Felipe Jardim"
+    />
+    <meta name="author" content="Felipe Jardim" />
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="particles" aria-hidden="true"></div>
+
+    <nav class="navbar" aria-label="Menu de navegação principal">
+      <button
+        class="menu-toggle"
+        aria-label="Abrir menu de navegação"
+        aria-expanded="false"
+        aria-controls="menu"
+      >
+        <span class="hamburger"></span>
+      </button>
+      <ul class="menu" id="menu">
+        <li>
+          <a href="#home" class="link-menu">Home</a>
+        </li>
+        <li>
+          <a href="#about-me" class="link-menu">About Me</a>
+        </li>
+        <li>
+          <a href="#projects" class="link-menu">Projects</a>
+        </li>
+        <li>
+          <a href="#contact-me" class="link-menu">Contact-me</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header id="home" class="hero">
+      <img
+        src="./img/profile-picture.webp"
+        alt="Foto do Felipe olhando para frente"
+        class="profile-picture"
+      />
+      <h1>Felipe Jardim</h1>
+      <p class="subtitle">Web Developer</p>
+    </header>
+
+    <main>
+      <section id="about-me" class="about-me">
+        <h2 class="about-me-title">About me</h2>
+        <div class="about-me-div">
+          <p class="about-me-text">
+            I've always preferred finding solutions over accepting limitations.
+            My curiosity about technology has driven me to explore various areas
+            of IT, from web development to tech support. Along the way, I worked
+            as a freelance web designer, creating websites that are both
+            functional and visually appealing, and I also independently
+            developed projects in Python.
+          </p>
+        </div>
+      </section>
+      <section id="projects" class="projects">
+        <h2 class="projects-title">My projects</h2>
+        <div class="projects-div">
+          <div class="projects-card">
+            <img
+              loading="lazy"
+              class="projects-img"
+              src="./img/site-cantinho-lusitano.webp"
+              alt="Imagem de notebook e celular mostrando a home da landing page de um restaurante ficticio chamado Cantinho Lusitano"
+            />
+            <div class="projects-text-div">
+              <h3 class="projects-info">Cantinho Lusitano</h3>
+              <p class="projects-paragraph">
+                The Cantinho Lusitano Project is an initiative aimed at bringing
+                the traditional elegance of Lisbon into the online world.
+                Inspired by Lisbon's cultural richness, our goal is to create a
+                website that reflects the authenticity and charm of the
+                Lusitanian spirit. We focus on capturing the classic and
+                captivating essence of the restaurant, offering visitors a
+                virtual experience that transports them to its unique
+                atmosphere.
+              </p>
+            </div>
+          </div>
+          <div class="projects-card">
+            <img
+              loading="lazy"
+              class="projects-img"
+              src="./img/site-michael-jordan.webp"
+              alt="Imagem de notebook e celular mostrando a home da landing page de uma Landing Page Ficticia para o Michael Jordan"
+            />
+            <div class="projects-text-div">
+              <h3 class="info-projects">Cantinho Lusitano</h3>
+              <p class="projects-paragraph">
+                This is a landing page project for the Michael Jordan
+                Masterclass. Created with passion and dedication, its goal is to
+                share Jordan's story and his impact on the world of sports.
+                While it’s a fictional and non-profit initiative, the
+                high-conversion page aims to capture the essence of
+                determination and success that define Jordan’s legendary career.
+              </p>
+            </div>
+          </div>
+          <div class="projects-card">
+            <img
+              loading="lazy"
+              class="projects-img"
+              src="./img/site-my-maker.webp"
+              alt="Imagem de notebook e celular mostrando a home de um site institucional para o projeto MyMaker"
+            />
+            <div class="projects-text-div">
+              <h3 class="info-projects">My Maker</h3>
+              <p class="projects-paragraph">
+                This is a landing page project for the Michael Jordan
+                Masterclass. Created with passion and dedication, its goal is to
+                share Jordan's story and his impact on the world of sports.
+                While it’s a fictional and non-profit initiative, the
+                high-conversion page aims to capture the essence of
+                determination and success that define Jordan’s legendary career.
+              </p>
+            </div>
+          </div>
+          <!-- <div class="projects-card">
+                    <img class="projects-img" src="./img/site-supertrack.webp" alt="">
+                    <h3 class="info-projects">Cantinho Lusitano</h3>
+                    <p class="projects-paragraph">This is a landing page project for the Michael Jordan Masterclass. Created with passion and dedication, its goal is to share Jordan's story and his impact on the world of sports. While it’s a fictional and non-profit initiative, the high-conversion page aims to capture the essence of determination and success that define Jordan’s legendary career.</p>
+                </div> -->
+        </div>
+      </section>
+      <section class="contact-me" id="contact-me">
+        <h2 class="contact-me-title">Contact-me</h2>
+        <form class="contact-form" id="form" onsubmit="sendMessage(event)">
+          <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input
+              class="form-field"
+              placeholder="Seu nome"
+              id="name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message:</label>
+            <textarea
+              class="form-field"
+              placeholder="Envie sua mensagem"
+              id="message"
+              rows="6"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="form-button">Send message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-media">
+        <a loading="lazy" href="https://github.com/lipejar"
+          ><img
+            class="social-icon"
+            src="./img/github-mark-white.svg"
+            alt="GitHub Logo White"
+        /></a>
+        <a loading="lazy" href="https://www.linkedin.com/in/felipefjardim/"
+          ><img
+            class="social-icon"
+            src="./img/InBug-White.png"
+            alt="GitHub Logo White"
+        /></a>
+      </div>
+      <p>&copy; 2025 Felipe Fernandes Jardim. Todos os direitos reservados.</p>
+    </footer>
+
+    <script defer src="./script.js"></script>
+  </body>
+</html>
