@@ -33,18 +33,35 @@ body {
 .navbar {
     position: fixed;
     top: 0;
-    background: rgba(15, 42, 19, 0.8);
+    background: rgba(88, 255, 113, 0.03);
     width: 100%;
     z-index: 100;
-    padding: 1.5rem;
+    padding: 1rem 2rem;
     backdrop-filter: blur(5px);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 .menu {
     display: flex;
     list-style: none;
     gap: 3rem;
-    justify-content: center;
+    justify-content: right;
 }
 
 .menu-open {
@@ -408,3 +425,76 @@ footer {
         padding: 1rem;
     }
 }
+
+
+selector{
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    align-self: center;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+    
+    selector .elementor-button{
+    box-shadow: inset 0px 0px 15px 4px #007588;
+    padding: 20px 50px;
+    background: #002329 !important;
+    }
+    
+    selector .elementor-button:hover{
+    box-shadow: inset 0px 0px 15px 4px #00b6d4;
+    }
+    
+    selector .elementor-button:before
+    {
+    content: "";
+    position: absolute;
+    left: 0%;
+    width: 150px;
+    height: 300%;
+    top: -100%;
+    filter:blur(10px);
+    transition: 0s cubic-bezier(0.9, 0.9, 0.3, 1.0000); opacity: 0.3;
+    background: linear-gradient(to right, transparent 1%, #deebff 40%,#deebff 60% , transparent 100%);
+    pointer-events: none;
+    transform: rotate(20deg) translatex(-100%);
+    }
+    
+    selector .elementor-button:hover:before {
+    transition: 1s cubic-bezier(0.9, 0.9, 0.3, 1.0000);
+    transform: rotate(20deg) translatex(200%);
+    }
+    
+    selector .elementor-button:after {
+    font-family: Questrial;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    content: "CSS PACK";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    background: transparent;
+    transform: translate(0%,100%);
+    z-index: 99;
+    left: 0%;
+    top: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 2s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+    
+    selector .elementor-button:hover .elementor-button-text{
+    transform: translatey(-250%)!important;
+    transition: all 2s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+    
+    selector .elementor-button-text{
+    transition: all 2s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+    
+    selector .elementor-button:hover::after {
+    transform: translate(0%,-100%);
+    }
