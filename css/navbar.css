@@ -2,14 +2,17 @@
 .navbar {
     position: fixed;
     top: 0;
-    background: rgba(88, 255, 113, 0.03); /* Fundo semi-transparente */
-    width: 100%;
+    background: rgba(88, 255, 113, 0.08); /* Fundo semi-transparente */
+    width: calc(100% - 4rem);;
     z-index: 100;
     padding: 1rem 2rem;
     backdrop-filter: blur(5px); /* Efeito de desfoque no fundo */
     display: flex; /* Para alinhar logo e menu */
     justify-content: space-between;
     align-items: center;
+    margin: 0.5rem 2rem 0px 2rem;
+    border-radius: 3rem;
+    border: 2.5px solid var(--color-glass);
 }
 
 /* Estiliza o logo na navbar */
