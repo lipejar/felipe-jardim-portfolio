@@ -1,0 +1,16 @@
+/* Animação de flutuação para a foto de perfil */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Desativa animações para usuários que preferem menos movimento */
+@media (prefers-reduced-motion: reduce) {
+    .hero__profile-picture {
+        animation: none;
+    }
+}

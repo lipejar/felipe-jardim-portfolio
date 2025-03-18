@@ -1,0 +1,101 @@
+/* Estiliza a barra de navegação fixa no topo */
+.navbar {
+    position: fixed;
+    top: 0;
+    background: rgba(88, 255, 113, 0.03); /* Fundo semi-transparente */
+    width: 100%;
+    z-index: 100;
+    padding: 1rem 2rem;
+    backdrop-filter: blur(5px); /* Efeito de desfoque no fundo */
+    display: flex; /* Para alinhar logo e menu */
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estiliza o logo na navbar */
+.navbar__logo {
+    width: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Lista de itens do menu */
+.navbar__menu {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    justify-content: right;
+}
+
+/* Links do menu */
+.navbar__link {
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 500;
+    padding: 0.5rem;
+    position: relative;
+}
+
+/* Efeito de sublinhado nos links do menu */
+.navbar__link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    transition: width 0.5s ease;
+}
+
+.navbar__link:hover::after {
+    width: 100%;
+}
+
+/* Botão do menu hambúrguer (escondido por padrão) */
+.navbar__menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 101;
+}
+
+/* Ícone do hambúrguer (3 linhas) */
+.navbar__hamburger,
+.navbar__hamburger::before,
+.navbar__hamburger::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: var(--color-text);
+    transition: all 0.3s ease;
+}
+
+.navbar__hamburger::before {
+    transform: translateY(-8px);
+}
+
+.navbar__hamburger::after {
+    transform: translateY(5px);
+}
+
+/* Transforma o hambúrguer em "X" quando aberto */
+.navbar__menu-toggle[aria-expanded="true"] .navbar__hamburger {
+    background: transparent;
+}
+
+.navbar__menu-toggle[aria-expanded="true"] .navbar__hamburger::before {
+    transform: rotate(45deg);
+}
+
+.navbar__menu-toggle[aria-expanded="true"] .navbar__hamburger::after {
+    transform: rotate(-45deg) translate(7px, -7px);
+}

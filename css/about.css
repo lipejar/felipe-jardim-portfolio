@@ -1,0 +1,30 @@
+/* Estiliza a seção "About Me" */
+.about-me {
+    align-items: center;
+    padding: 6rem 2rem;
+}
+
+/* Título da seção */
+.about-me__title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--color-text);
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+/* Container do texto */
+.about-me__content {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--color-glass);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Texto da seção */
+.about-me__text {
+    text-align: center;
+    font-size: 1.2rem;
+}

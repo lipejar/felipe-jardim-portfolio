@@ -1,0 +1,22 @@
+/* Estiliza o rodapé */
+footer {
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Container dos ícones de redes sociais */
+.footer__social {
+    width: 100%;
+    display: flex;
+    justify-content: center;   
+}
+
+/* Ícones de redes sociais */
+.footer__social-icon {
+    width: 3rem;
+    margin: 0 1rem;
+    filter: brightness(100%) saturate(100%) hue-rotate(120deg) brightness(1.5);
+}

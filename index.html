@@ -20,30 +20,30 @@
     <div class="particles" aria-hidden="true"></div>
 
     <nav class="navbar" aria-label="Menu de navegação principal">
-      <a href="#home" class="logo">
+      <a href="#home" class="navbar__logo">
         <img src="./img/fj-logo-white.svg" alt="Logo do Felipe Jardim" />
         <span>Felipe Jardim</span>
       </a>
       <button
-        class="menu-toggle"
+        class="navbar__menu-toggle"
         aria-label="Abrir menu de navegação"
         aria-expanded="false"
         aria-controls="menu"
       >
-        <span class="hamburger"></span>
+        <span class="nvabar__hamburger"></span>
       </button>
-      <ul class="menu" id="menu">
+      <ul class="navbar__menu" id="menu">
         <li>
-          <a href="#home" class="link-menu">Home</a>
+          <a href="#home" class="navbar__link">Home</a>
         </li>
         <li>
-          <a href="#about-me" class="link-menu">About Me</a>
+          <a href="#about-me" class="navbar__link">About Me</a>
         </li>
         <li>
-          <a href="#projects" class="link-menu">Projects</a>
+          <a href="#projects" class="navbar__link">Projects</a>
         </li>
         <li>
-          <a href="#contact-me" class="link-menu">Contact me</a>
+          <a href="#contact-me" class="navbar__link">Contact me</a>
         </li>
       </ul>
     </nav>
@@ -52,17 +52,17 @@
       <img
         src="./img/profile-picture.webp"
         alt="Foto do Felipe olhando para frente"
-        class="profile-picture"
+        class="hero__profile-picture"
       />
       <h1>Felipe Jardim</h1>
-      <p class="subtitle">Web Developer</p>
+      <p class="hero__subtitle">Web Developer</p>
     </header>
 
     <main>
       <section id="about-me" class="about-me">
-        <h2 class="about-me-title">About me</h2>
-        <div class="about-me-div">
-          <p class="about-me-text">
+        <h2 class="about-me__title">About me</h2>
+        <div class="about-me__content">
+          <p class="about-me__text">
             I've always preferred finding solutions over accepting limitations.
             My curiosity about technology has driven me to explore various areas of IT, from web development to tech support. 
             <br>
@@ -71,18 +71,18 @@
         </div>
       </section>
       <section id="projects" class="projects">
-        <h2 class="projects-title">My projects</h2>
-        <div class="projects-div">
-          <div class="projects-card">
+        <h2 class="projects__title">My projects</h2>
+        <div class="projects__grid">
+          <div class="projects__card">
             <img
               loading="lazy"
-              class="projects-img"
+              class="projects__img"
               src="./img/site-cantinho-lusitano.webp"
               alt="Imagem de notebook e celular mostrando a home da landing page de um restaurante ficticio chamado Cantinho Lusitano"
             />
-            <div class="projects-text-div">
+            <div class="projects__content">
               <h3>Cantinho Lusitano</h3>
-              <p class="projects-paragraph">
+              <p class="projects__description">
                 The Cantinho Lusitano Project is an initiative aimed at bringing
                 the traditional elegance of Lisbon into the online world.
                 Inspired by Lisbon's cultural richness, our goal is to create a
@@ -94,16 +94,16 @@
               </p>
             </div>
           </div>
-          <div class="projects-card">
+          <div class="projects__card">
             <img
               loading="lazy"
-              class="projects-img"
+              class="projects__img"
               src="./img/site-michael-jordan.webp"
               alt="Imagem de notebook e celular mostrando a home da landing page de uma Landing Page Ficticia para o Michael Jordan"
             />
-            <div class="projects-text-div">
+            <div class="projects__content">
               <h3>Michael Jordan Masterclass</h3>
-              <p class="projects-paragraph">
+              <p class="projects__description">
                 This is a landing page project for the Michael Jordan
                 Masterclass. Created with passion and dedication, its goal is to
                 share Jordan's story and his impact on the world of sports.
@@ -113,25 +113,25 @@
               </p>
             </div>
           </div>
-          <div class="projects-card">
+          <div class="projects__card">
             <img
               loading="lazy"
-              class="projects-img"
+              class="projects__img"
               src="./img/site-my-maker.webp"
               alt="Imagem de notebook e celular mostrando a home de um site institucional para o projeto MyMaker"
             />
-            <div class="projects-text-div">
+            <div class="projects__content">
               <h3>My Maker</h3>
-              <p class="projects-paragraph">
+              <p class="projects__description">
                 MyMaker is an innovative project aimed at the public school student community. Our goal is to inspire, educate, and empower young talents through practical and educational activities. I sought to capture the essence of the project on this page through thoughtful design.
               </p>
             </div>
           </div>
-          <div class="projects-card">
-            <img class="projects-img" src="./img/site-supertrack.webp" alt="Imagem de notebook e celular mostrando a página de vendas da empresa de rastreamento Supertrack">
-                <div class="projects-text-div">
+          <div class="projects__card">
+            <img class="projects__img" src="./img/site-supertrack.webp" alt="Imagem de notebook e celular mostrando a página de vendas da empresa de rastreamento Supertrack">
+                <div class="projects__content">
                     <h3>Supertrack</h3>
-                    <p class="projects-paragraph">This is a sales page project for the vehicle tracking company Supertrack. Created with passion and dedication, its goal, from the very first to the very last pixel, is to drive conversions. This high-conversion page aims to capture the essence and identity that define Supertrack.</p>
+                    <p class="projects__description">This is a sales page project for the vehicle tracking company Supertrack. Created with passion and dedication, its goal, from the very first to the very last pixel, is to drive conversions. This high-conversion page aims to capture the essence and identity that define Supertrack.</p>
                 </div>
             </div>
         </div>
@@ -143,31 +143,31 @@
     </div>
 </section>
 
-      <!-- <----------------------Contact Me----------------------> -->
+      <!-- <----------------------Contact Me---------------------->
 
       <section class="contact-me" id="contact-me">
-        <h2 class="contact-me-title">Contact me</h2>
-        <form class="contact-form" id="form" onsubmit="sendMessage(event)">
-          <div class="form-group">
+        <h2 class="contact-me__title">Contact me</h2>
+        <form class="contact-me__form" id="form" onsubmit="sendMessage(event)">
+          <div class="contact-me__form-group">
             <label for="name">Your Name:</label>
             <input
-              class="form-field"
+              class="contact-me__form-field"
               placeholder="Type your name here"
               id="name"
               required
             />
           </div>
-          <div class="form-group">
+          <div class="contact-me__form-group">
             <label for="message">Your Message:</label>
             <textarea
-              class="form-field"
+              class="contact-me__form-field"
               placeholder="Type your message here"
               id="message"
               rows="6"
               required
             ></textarea>
           </div>
-          <button type="submit" class="form-button">
+          <button type="submit" class="contact-me__form-button">
             Send message
             <img src="./img/whatsapp-icon.svg" alt="ìcone do whatsapp">
         </button>
@@ -176,18 +176,18 @@
     </main>
 
     <footer>
-      <div class="social-media">
+      <div class="footer__social">
         <a href="https://github.com/lipejar"
           ><img
             loading="lazy"
-            class="social-icon"
+            class="footer__social-icon"
             src="./img/github-mark-white.svg"
             alt="GitHub Logo White"
         /></a>
         <a href="https://www.linkedin.com/in/felipefjardim/"
           ><img
             loading="lazy"
-            class="social-icon"
+            class="footer__social-icon"
             src="./img/InBug-White.png"
             alt="GitHub Logo White"
         /></a>
@@ -195,6 +195,6 @@
       <p>&copy; 2025 Felipe Fernandes Jardim. Todos os direitos reservados.</p>
     </footer>
 
-    <script defer src="./script.js"></script>
+    <script defer src="./js/script.js"></script>
   </body>
 </html>

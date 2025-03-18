@@ -1,0 +1,37 @@
+/* Reset básico para remover margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Ativa rolagem suave para links de âncora */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Define variáveis de cores para facilitar manutenção */
+:root {
+    --primary-color: #164C03;        /* Verde principal */
+    --secondary-color: #10302D;      /* Verde secundário */
+    --color-text: #FAFAFA;           /* Texto principal (branco) */
+    --color-dark: #1B1B1B;           /* Fundo escuro */
+    --color-light: #C1FFB5;          /* Verde claro para destaques */
+    --color-glass: #2C3129;          /* Fundo semi-transparente */
+}
+
+/* Define o fundo escuro e a cor do texto padrão */
+body {
+    background-color: var(--color-dark);
+    color: var(--color-text);
+}
+
+/* Estilo de foco para acessibilidade em links e botões */
+.link-menu:focus,
+.form-button:focus,
+.menu-toggle:focus {
+    outline: 2px solid var(--color-light);
+    outline-offset: 2px;
+    border-radius: 15px;
+}

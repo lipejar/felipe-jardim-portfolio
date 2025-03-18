@@ -1,0 +1,79 @@
+/* Estiliza a seção "Contact Me" */
+.contact-me {
+    padding: 6rem 2rem;
+}
+
+/* Título da seção */
+.contact-me__title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+}
+
+/* Formulário de contato */
+.contact-me__form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border: 1px solid var(--color-glass);
+    border-radius: 16px;
+}
+
+/* Grupo de campos (label + input/textarea) */
+.contact-me__form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Label dos campos */
+.contact-me__form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Campos de entrada (input e textarea) */
+.contact-me__form-field {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: var(--color-light);
+    outline: none;
+    border: 1px solid var(--color-glass);
+}
+
+/* Efeito de foco nos campos */
+.contact-me__form-field:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 10px rgba(70, 229, 91, 0.3);
+}
+
+/* Botão de envio */
+.contact-me__form-button {
+    color: var(--color-light);
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ícone do WhatsApp no botão */
+.contact-me__form-button img {
+    width: 1.3rem;
+    margin-left: 0.5rem;
+    stroke: var(--color-light);
+}
+
+/* Efeito de hover no botão */
+.contact-me__form-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px rgba(70, 229, 91, 0.5);
+}
