@@ -14,3 +14,13 @@
         animation: none;
     }
 }
+
+/* Animação ajustada pro tamanho do hero */
+@keyframes animParticle {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-100vh); /* Ajustado pra altura total do hero */
+    }
+}
