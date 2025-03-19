@@ -25,6 +25,7 @@ html {
 body {
     background-color: var(--color-dark);
     color: var(--color-text);
+    cursor: url('../img/cursor.png'), auto;
 }
 
 /* Estilo de foco para acessibilidade em links e botões */
